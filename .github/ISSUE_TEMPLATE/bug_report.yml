@@ -1,0 +1,28 @@
+name: "Bug report"
+description: أبلغ عن خلل أو سلوك غير متوقع
+title: "[BUG]: "
+labels: [bug, needs-triage]
+body:
+  - type: textarea
+    id: desc
+    attributes:
+      label: الوصف
+      description: ما الذي يحدث؟ وما المتوقع حدوثه؟
+      placeholder: وصف موجز وواضح للمشكلة
+    validations: { required: true }
+  - type: textarea
+    id: steps
+    attributes:
+      label: خطوات إعادة المشكلة
+      description: كيف نعيد المشكلة؟
+      placeholder: "1) …\n2) …\n3) …"
+  - type: input
+    id: version
+    attributes:
+      label: الإصدار/الفرع
+      placeholder: main أو رقم الإصدار
+  - type: textarea
+    id: logs
+    attributes:
+      label: سجلات/صور
+      description: أرفق لقطات شاشة أو رسائل خطأ مفيدة
