@@ -1,0 +1,22 @@
+name: "Feature request"
+description: اقترح ميزة أو تحسين
+title: "[FEAT]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: المشكلة أو الفرصة
+      description: ما المشكلة التي ستحلها هذه الميزة؟
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes:
+      label: المقترح
+      description: صف الحل المقترح وسلوكه المتوقع
+    validations: { required: true }
+  - type: textarea
+    id: context
+    attributes:
+      label: سياق إضافي/بدائل
+      description: بدائل فكرت فيها أو اعتبارات التصميم
